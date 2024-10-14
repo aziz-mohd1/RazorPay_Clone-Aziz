@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800;900;1000&family=Poppins:wght@100&family=Raleway&family=Roboto+Flex&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    scroll-behavior: smooth;
+}
+
+.Core-Section{
+    background-size: 100% 100% ;
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+}
+
+.feature-Section-2{
+    background-size: 160% 100% ;
+    /* pt-[225px] pb-[500px] px-[32px] */
+    padding: 225px 32px 500px 32px;
+}
+
+@media (max-width:768px) {
+    .feature-Section-2{
+        background-size: 450% 100% ;
+        padding: 120px 32px 250px 32px;
+    }
+}
+
+.sec-2-demobar{
+    @media (max-width:320px) {
+        visibility: hidden;
+    }
+}
+
+.section-1-boxes, .section-2-boxes {
+    @media (max-width:300px) {
+        min-height: 22rem;
+        padding-bottom: 12rem;
+    }
+}
+
+.Core-Section{
+    @media (max-width:1024px) {
+        background-size: 300% 100% ;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 450px 32px 250px 32px;
+    }
+}
+
+.superCharge-Section{
+    background-size: 100% 100%;
+    padding-top: 8rem;
+    padding-bottom: 7rem;
+}
+
+.superCharge-Section{
+    @media (max-width:1024px) {
+        background-size: 200% 100% ;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding:500px 5px;
+    }
+}
+
+.companiesList{
+    animation: 12s infinite linear moveCompany;
+}
+
+@keyframes moveCompany {
+    0%{
+        top:0;
+    }
+    100%{
+        top:-130%;
+    }
+}
+
+/* .john-setting{
+    @media (max-width:300px) {
+        max-width:150px;
+    }
+} */
+/* @media (min-width: 1024px) {
+    .hamburger{
+        visibility: block;
+    }
+} */

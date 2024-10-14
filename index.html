@@ -7,104 +7,20 @@
     <link rel="icon" type="image/png" href="./Images/Aziz-Logo.png" />
     
     <title>Razorpay Clone | Aziz</title>
-    <style>
-        *{
-            scroll-behavior: smooth;
-        }
+    <link rel="stylesheet" href="./output.css">
 
-        .Core-Section{
-            background-size: 100% 100% ;
-            padding-top: 12rem;
-            padding-bottom: 12rem;
-        }
-
-        .feature-Section-2{
-            background-size: 160% 100% ;
-            /* pt-[225px] pb-[500px] px-[32px] */
-            padding: 225px 32px 500px 32px;
-        }
-        
-        @media (max-width:768px) {
-            .feature-Section-2{
-                background-size: 450% 100% ;
-                padding: 120px 32px 250px 32px;
-            }
-        }
-
-        .sec-2-demobar{
-            @media (max-width:320px) {
-                visibility: hidden;
-            }
-        }
-
-        .section-1-boxes, .section-2-boxes {
-            @media (max-width:300px) {
-                min-height: 22rem;
-                padding-bottom: 12rem;
-            }
-        }
-
-        .Core-Section{
-            @media (max-width:1024px) {
-                background-size: 300% 100% ;
-                background-repeat: no-repeat;
-                background-position: center;
-                padding: 450px 32px 250px 32px;
-            }
-        }
-        
-        .superCharge-Section{
-            background-size: 100% 100%;
-            padding-top: 8rem;
-            padding-bottom: 7rem;
-        }
-
-        .superCharge-Section{
-            @media (max-width:1024px) {
-                background-size: 200% 100% ;
-                background-repeat: no-repeat;
-                background-position: center;
-                padding:500px 5px;
-            }
-        }
-
-        .companiesList{
-            animation: 12s infinite linear moveCompany;
-        }
-
-        @keyframes moveCompany {
-            0%{
-                top:0;
-            }
-            100%{
-                top:-130%;
-            }
-        }
-
-        /* .john-setting{
-            @media (max-width:300px) {
-                max-width:150px;
-            }
-        } */
-        /* @media (min-width: 1024px) {
-            .hamburger{
-                visibility: block;
-            }
-        } */
-
-    </style>
     <script>src="https://unpkg.com/feather-icons"</script>
-    <script src="https://cdn.tailwindcss.com"></script>
+    
 </head>
-<body class="">
-    <div class="overflow-x-hidden w-full relative">
+<body class="font-mullish overflow-x-hidden">
+    <div class="overflow-x-hidden w-[100vw] relative">
         <!-- Poster -->
         <!-- <div class="bg-white h-[52px]">
 
         </div> -->
         
         <!-- Nav-Bar -->
-        <nav class=" flex justify-center items-center bg-deepBlue px-5 lg:px-8">
+        <nav class="w-[100%] flex justify-center items-center bg-deepBlue px-5 lg:px-8 fixed top-0 z-[1100]">
             <div class=" relative max-w-[800px] w-11/12 flex "> 
                 <a href="#" class="cursor-pointer py-7 ">
                     <img src="./Images/logo.svg" alt="RazorPay" class="max-w-[7.85rem] h-[1.85rem]">
@@ -127,7 +43,7 @@
                         <a href="#">Payroll</a>
                         <div class="absolute hidden w-[90%] left-1 h-1 bottom-3 bg-lightBlue group-hover:block"></div>
                     </li>
-                    <li class="relative transition-all duration-200 cursor-pointer font-mullish py-7 hover:text-lightBlue group">
+                    <li class="relative transition-all duration-200 cursor-pointer   py-7 hover:text-lightBlue group">
                         <a href="#">Resources</a>
                         <div class="absolute hidden w-[90%] left-1 h-1 bottom-3 bg-lightBlue group-hover:block"></div>
                     </li>
@@ -165,7 +81,7 @@
         </nav>
         
         <!-- Hero-Section -->
-        <section class="relative bg-deepBlue mx-auto px-8">
+        <section class="relative bg-deepBlue mx-auto px-8 mt-20">
             <div class="width-10/12 max-w-[1080px]  mx-auto pt-20 lg:pt-0 lg:flex justify-between items-center">
                 <!-- left part -->
                 <div class=" text-white space-y-8">
@@ -187,9 +103,9 @@
             <!-- <div class="relative">
                 <img src="./Images/hero-shape.svg" alt="HeroShapeImg" class="absolute w-full left-0 right-0">
             </div>  -->
-            <div class="absolute w-full md:w-[103%] left-0 right-0 top-[98%] md:-right-2 z-[1000] ">
+            <div class="absolute w-full md:w-[103%] left-0 right-0 top-[98%] md:-right-2">
                 <img src="./Images/hero-shape.svg" loading="lazy" class="w-full object-fill z-10">
-              </div>
+            </div>
             
         </section>
 
@@ -206,7 +122,7 @@
 
                 <div class="flex flex-col items-center space-y-3">
                 <!-- heading -->
-                    <h2 class="font-mullish text-center text-[40px] md:text-2xl leading-[1.2] font-[950] tracking-wider">Accept Payments with Razorpay Payment Suite</h2>
+                    <h2 class="  text-center text-[40px] md:text-2xl leading-[1.2] font-[950] tracking-wider">Accept Payments with Razorpay Payment Suite</h2>
                     <div class="w-6 h-1 bg-greenLight"></div>
                 </div>
                 
@@ -217,12 +133,12 @@
                     
                     <div class="flex flex-col justify-between w-full">
                         
-                        <h1 class="font-mullish  font-extrabold text-[20px] md:text-[1.7rem] leading-10 max-w-[500px]">
+                        <h1 class="   font-extrabold text-[20px] md:text-[1.7rem] leading-10 max-w-[500px]">
                             Supercharge your business with the all-powerful
                             <span class="text-lightBlue">Payment Gateway</span>
                         </h1>
                         <!-- list items -->
-                        <ul class="space-y-2 font-mullish">
+                        <ul class="space-y-2  ">
                             <li class="flex items-center space-x-2">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check text-greenLight"><polyline points="20 6 9 17 4 12"></polyline></svg>
                                 
@@ -252,10 +168,10 @@
                         </ul>
                         <!-- button section -->
                         <div class="flex">
-                            <button class="flex font-mullish px-6 py-3 font-extrabold text-white text-lg transition-all duration-200 bg-blue-500 rounded-[5px] hover:bg-blue-600">Sign Up Now<svg viewBox="0 0 24 24" focusable="false" class="chakra-icon css-onkibi relative top-[0.4rem] left-[0.39rem] w-[0.8rem] "><path fill="currentColor" d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z "></path></svg>
+                            <button class="flex   px-6 py-3 font-extrabold text-white text-lg transition-all duration-200 bg-blue-500 rounded-[5px] hover:bg-blue-600">Sign Up Now<svg viewBox="0 0 24 24" focusable="false" class="chakra-icon css-onkibi relative top-[0.4rem] left-[0.39rem] w-[0.8rem] "><path fill="currentColor" d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z "></path></svg>
                             </button>
         
-                            <button class="flex font-mullish px-6 py-3 font-extrabold text-lightBlue text-lg transition-all duration-500  hover:text-black group">Know More
+                            <button class="flex   px-6 py-3 font-extrabold text-lightBlue text-lg transition-all duration-500  hover:text-black group">Know More
                                 <div class="h-[6px] w-[6px] border-r-[1.9px] border-b-[1.9px] -rotate-[45deg] border-blue-600  group-hover:border-black relative top-[11.5px] left-[8px] transition-all duration-500 "></div>
                             </button>
                         </div>
@@ -299,12 +215,12 @@
 
                     <div class="flex flex-col space-y-4 w-full p-8">
                         
-                        <h1 class="font-mullish font-extrabold text-[20px] leading-[25px] max-w-[300px] pr-4">
+                        <h1 class="  font-extrabold text-[20px] leading-[25px] max-w-[300px] pr-4">
                             Supercharge your business with the all-powerful
                             <span class="text-lightBlue">Payment Gateway</span>
                         </h1>
                         <!-- list items -->
-                        <ul class="space-y-1 font-mullish">
+                        <ul class="space-y-1  ">
                             <li class="flex items-center space-x-2">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check text-greenLight"><polyline points="20 6 9 17 4 12"></polyline></svg>
                                 
@@ -334,10 +250,10 @@
                         </ul>
                         <!-- button section -->
                         <div class="flex flex-col-reverse">
-                            <button class="flex justify-center font-mullish px-6 py-3 font-extrabold text-white text-lg transition-all duration-200 bg-blue-500 rounded-[5px] hover:bg-blue-600">Sign Up Now<svg viewBox="0 0 24 24" focusable="false" class="chakra-icon css-onkibi relative top-[0.4rem] left-[0.39rem] w-[0.8rem] "><path fill="currentColor" d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z "></path></svg>
+                            <button class="flex justify-center   px-6 py-3 font-extrabold text-white text-lg transition-all duration-200 bg-blue-500 rounded-[5px] hover:bg-blue-600">Sign Up Now<svg viewBox="0 0 24 24" focusable="false" class="chakra-icon css-onkibi relative top-[0.4rem] left-[0.39rem] w-[0.8rem] "><path fill="currentColor" d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z "></path></svg>
                             </button>
         
-                            <button class="flex pb-2 font-mullish  font-extrabold text-lightBlue text-lg transition-all duration-500  hover:text-black group">Know More
+                            <button class="flex pb-2    font-extrabold text-lightBlue text-lg transition-all duration-500  hover:text-black group">Know More
                                 <div class="h-[6px] w-[6px] border-r-[1.9px] border-b-[1.9px] -rotate-[45deg] border-blue-600  group-hover:border-black relative top-[11.5px] left-[8px] transition-all duration-500 "></div>
                             </button>
                         </div>
@@ -378,13 +294,13 @@
 
                         <!-- box content -->
                         <div class="z-[100] absolute h-full w-full flex flex-col space-y-5 pl-5 py-6 pr-8 ">
-                            <h3 class="font-[900] text-2xl text-[#162F56] font-mullish">Payment Links</h3>
+                            <h3 class="font-[900] text-2xl text-[#162F56]  ">Payment Links</h3>
                             <p class="text-[16px] text-gray-500 pr-5">
                                 Share payment link via an email, SMS, messenger, chatbot etc. and get paid immediately
                             </p>
 
                             <!-- button -->
-                            <button class="flex font-extrabold text-blue-600 text-[16px] py-3 transition-all duration-500  hover:text-blue-500 group font-mullish">Know More
+                            <button class="flex font-extrabold text-blue-600 text-[16px] py-3 transition-all duration-500  hover:text-blue-500 group  ">Know More
                                 <div class="h-[7px] w-[7px] border-r-[2px] border-b-[2px] -rotate-[45deg] border-blue-600  group-hover:border-blue-500 relative top-[10px] left-[5px] transition-all duration-500 "></div>
                             </button>
                             
@@ -424,13 +340,13 @@
 
                         <!-- box content -->
                         <div class="z-[100] absolute h-full w-full flex flex-col space-y-5 pl-5 py-6 pr-8">
-                            <h3 class="font-[900] text-2xl text-[#162F56] font-mullish">Payment Pages</h3>
+                            <h3 class="font-[900] text-2xl text-[#162F56]  ">Payment Pages</h3>
                             <p class="text-[16px] text-gray-500 pr-5">
                                 Take your store online instantly with zero coding. Accept international & domestic payments
                             </p>
 
                             <!-- button -->
-                            <button class="flex font-extrabold text-blue-600 text-[16px] py-3 transition-all duration-500  hover:text-blue-500 group font-mullish">Know More
+                            <button class="flex font-extrabold text-blue-600 text-[16px] py-3 transition-all duration-500  hover:text-blue-500 group  ">Know More
                                 <div class="h-[7px] w-[7px] border-r-[2px] border-b-[2px] -rotate-[45deg] border-blue-600  group-hover:border-blue-500 relative top-[10px] left-[5px] transition-all duration-500 "></div>
                             </button>
                             
@@ -469,13 +385,13 @@
 
                         <!-- box content -->
                         <div class="z-[100] absolute h-full w-full flex flex-col space-y-5 pl-5 py-6 pr-8">
-                            <h3 class="font-[900] text-2xl text-[#162F56] font-mullish">Payment Buttons</h3>
+                            <h3 class="font-[900] text-2xl text-[#162F56]  ">Payment Buttons</h3>
                             <p class="text-[16px] text-gray-500 pr-5">
                                 Create, Copy & Collect With Payment Button. Collect one time or subscription payments & more
                             </p>
 
                             <!-- button -->
-                            <button class="flex font-extrabold text-blue-600 text-[16px] py-3 transition-all duration-500  hover:text-blue-500 group font-mullish">Know More
+                            <button class="flex font-extrabold text-blue-600 text-[16px] py-3 transition-all duration-500  hover:text-blue-500 group  ">Know More
                                 <div class="h-[7px] w-[7px] border-r-[2px] border-b-[2px] -rotate-[45deg] border-blue-600  group-hover:border-blue-500 relative top-[10px] left-[5px] transition-all duration-500 "></div>
                             </button>
                             
@@ -514,13 +430,13 @@
 
                         <!-- box content -->
                         <div class="z-[100] absolute h-full w-full flex flex-col space-y-5 pl-5 py-6 pr-8">
-                            <h3 class="font-[900] text-2xl text-[#162F56] font-mullish">Subscriptions</h3>
+                            <h3 class="font-[900] text-2xl text-[#162F56]  ">Subscriptions</h3>
                             <p class="text-[16px] text-gray-500 pr-5">
                                 Subscription plans with automated recurring transactions on various payment modes.
                             </p>
 
                             <!-- button -->
-                            <button class="flex font-extrabold text-blue-600 text-[16px] py-3 transition-all duration-500  hover:text-blue-500 group font-mullish">Know More
+                            <button class="flex font-extrabold text-blue-600 text-[16px] py-3 transition-all duration-500  hover:text-blue-500 group  ">Know More
                                 <div class="h-[7px] w-[7px] border-r-[2px] border-b-[2px] -rotate-[45deg] border-blue-600  group-hover:border-blue-500 relative top-[10px] left-[5px] transition-all duration-500 "></div>
                             </button>
                             
@@ -558,13 +474,13 @@
 
                         <!-- box content -->
                         <div class="z-[100] absolute h-full w-full flex flex-col space-y-5 pl-5 py-6 pr-8">
-                            <h3 class="font-[900] text-2xl text-[#162F56] font-mullish">Route</h3>
+                            <h3 class="font-[900] text-2xl text-[#162F56]  ">Route</h3>
                             <p class="text-[16px] text-gray-500 pr-5">
                                 Split incoming payments automatically to vendor’s accounts, manage marketplace money flow...
                             </p>
 
                             <!-- button -->
-                            <button class="flex font-extrabold text-blue-600 text-[16px] py-3 transition-all duration-500  hover:text-blue-500 group font-mullish">Know More
+                            <button class="flex font-extrabold text-blue-600 text-[16px] py-3 transition-all duration-500  hover:text-blue-500 group  ">Know More
                                 <div class="h-[7px] w-[7px] border-r-[2px] border-b-[2px] -rotate-[45deg] border-blue-600  group-hover:border-blue-500 relative top-[10px] left-[5px] transition-all duration-500 "></div>
                             </button>
                             
@@ -603,13 +519,13 @@
 
                         <!-- box content -->
                         <div class="z-[100] absolute h-full w-full flex flex-col space-y-5 pl-5 py-6 pr-8">
-                            <h3 class="font-[900] text-2xl text-[#162F56] font-mullish">Smart Collect</h3>
+                            <h3 class="font-[900] text-2xl text-[#162F56]  ">Smart Collect</h3>
                             <p class="text-[16px] text-gray-500 pr-5">
                                 Automatically reconcile incoming NEFT, RTGS, IMPS, UPI payments using Customer Identifiers & UPI-IDs
                             </p>
 
                             <!-- button -->
-                            <button class="flex font-extrabold text-blue-600 text-[16px] py-3 transition-all duration-500  hover:text-blue-500 group font-mullish">Know More
+                            <button class="flex font-extrabold text-blue-600 text-[16px] py-3 transition-all duration-500  hover:text-blue-500 group  ">Know More
                                 <div class="h-[7px] w-[7px] border-r-[2px] border-b-[2px] -rotate-[45deg] border-blue-600  group-hover:border-blue-500 relative top-[10px] left-[5px] transition-all duration-500 "></div>
                             </button>
                             
@@ -645,7 +561,7 @@
                     
                 <div class="flex flex-col items-center space-y-3 ">
                     <!-- heading -->
-                    <h2 class="hidden md:block font-mullish text-center md:text-center text-2xl leading-[1.2] font-[950] text-white">Explore RazorpayX powered Business Banking</h2>
+                    <h2 class="hidden md:block   text-center md:text-center text-2xl leading-[1.2] font-[950] text-white">Explore RazorpayX powered Business Banking</h2>
 
                     <!-- mobile heading -->
                     <div class="md:hidden flex flex-col self-start space-y-2">
@@ -671,12 +587,12 @@
                         <!-- left part -->
                         <div class="flex flex-col justify-between w-full">
                             
-                            <h1 class="font-mullish  text-white font-extrabold text-[1.7rem] leading-relaxed max-w-[500px] relative">
+                            <h1 class="   text-white font-extrabold text-[1.7rem] leading-relaxed max-w-[500px] relative">
                                 Manage your company’s finances and supercharge your business banking with
                                 <img src="./Images/razorpayX.svg" alt="" class="absolute top-[93px] left-[70px] h-[35px]">
                             </h1>
                             <!-- list items -->
-                            <ul class="space-y-2 font-mullish text-white z-[10]">
+                            <ul class="space-y-2   text-white z-[10]">
                                 <li class="flex items-center space-x-2">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check text-greenLight"><polyline points="20 6 9 17 4 12"></polyline></svg>
                                     
@@ -699,7 +615,7 @@
                             </ul>
                             <!-- button section -->
                             <div class="flex">
-                                <button class="flex font-mullish px-6 py-3 w-44 h-12 font-extrabold text-white text-[0.95rem] transition-all duration-200 bg-blue-500 rounded-[5px] hover:bg-blue-600">Sign Up
+                                <button class="flex   px-6 py-3 w-44 h-12 font-extrabold text-white text-[0.95rem] transition-all duration-200 bg-blue-500 rounded-[5px] hover:bg-blue-600">Sign Up
                                     
                                     <svg viewBox="0 0 24 24" focusable="false" class="chakra-icon css-onkibi relative top-0.5 left-[2.6rem] w-[1.2rem] z-[10]"><path fill="#E7F1FC" d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z "></path></svg>
 
@@ -707,7 +623,7 @@
 
                                 </button>
             
-                                <button class="flex font-mullish px-6 py-3 font-extrabold text-lightBlue text-[0.95rem] transition-all duration-200  hover:text-blue-400 group">Know More
+                                <button class="flex   px-6 py-3 font-extrabold text-lightBlue text-[0.95rem] transition-all duration-200  hover:text-blue-400 group">Know More
                                     <div class="h-[6px] w-[6px] border-r-[1.9px] border-b-[1.9px] -rotate-[45deg] border-blue-500  group-hover:border-blue-400 relative top-[9px] left-[8px] transition-all duration-200 "></div>
                                 </button>
                             </div>
@@ -757,7 +673,7 @@
                                 fully‑functional Current Accounts on RazorpayX
                             </h1>
                             <!-- list items -->
-                            <ul class="space-y-1 font-mullish text-white">
+                            <ul class="space-y-1   text-white">
                                 <li class="flex items-center space-x-2">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check text-greenLight"><polyline points="20 6 9 17 4 12"></polyline></svg>
                                     
@@ -787,7 +703,7 @@
                             </ul>
                             <!-- button section -->
                             <div class="flex flex-col-reverse ">
-                                <button class="relative bg-lightBlue w-full md:w-fit flex items-center justify-center md:justify-start text-white py-[14px] px-[10px] md:pr-[90px] rounded-md font-mullish font-bold hover:bg-lightBlue500 transition-all duration-200 ">
+                                <button class="relative bg-lightBlue w-full md:w-fit flex items-center justify-center md:justify-start text-white py-[14px] px-[10px] md:pr-[90px] rounded-md   font-bold hover:bg-lightBlue500 transition-all duration-200 ">
                                     Sign Up 
                                     <div class=" w-12 h-[60px] bg-greenLight skew-x-[20deg] absolute right-6 grid place-items-center">
                                         <svg viewBox="0 0 24 24" focusable="false" class="w-[20px] h-[20px] -skew-x-[20deg] ">
@@ -796,7 +712,7 @@
                                     </div>
                                 </button>
             
-                                <button class="flex pt-10 pb-7 font-mullish  font-extrabold text-lightBlue text-lg transition-all duration-500  hover:text-blue-500 group">Know More
+                                <button class="flex pt-10 pb-7    font-extrabold text-lightBlue text-lg transition-all duration-500  hover:text-blue-500 group">Know More
                                     <div class="h-[6px] w-[6px] border-r-[1.9px] border-b-[1.9px] -rotate-[45deg] border-lightBlue  group-hover:border-blue-500 relative top-[11.5px] left-[8px] transition-all duration-500 "></div>
                                 </button>
                             </div>
@@ -806,7 +722,7 @@
                     </div>
 
                     <!-- cards -->
-                    <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-rows-1 gap-8 items-center mt-20 max-w-[1090px] select-none font-mullish mx-auto">
+                    <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-rows-1 gap-8 items-center mt-20 max-w-[1090px] select-none   mx-auto">
                         <!-- b1 -->
                         <div class="section-2-boxes w-full min-h-[14rem] md:min-h-[15rem] relative cursor-pointer transition-all duration-400 hover:drop-shadow-[0_55px_55px_rgba(0,0,0,0.5)] group pb-10 md:mb-0 tracking-tighter md:tracking-normal ">
                             <img src="./Images/current-icon.svg" alt=""
@@ -837,14 +753,14 @@
 
                             <!-- box content -->
                             <div class="z-[100] absolute h-full w-full flex flex-col space-y-5 pl-5 py-2 md:py-6 pr-8 ">
-                                <h3 class="font-[900] text-2xl text-white font-mullish">Current Account</h3>
+                                <h3 class="font-[900] text-2xl text-white  ">Current Account</h3>
                                 <p class="text-[15px] text-gray-400 pr-5">
                                     Current accounts for fast-growing businesses, supported by the best-in-class technology
                                 </p>
 
                                 <!-- button -->
                                 
-                                <button class="flex font-extrabold text-blue-600 text-[16px] py-0 md:py-3 transition-all duration-500  hover:text-blue-500 group font-mullish w-[120px]">Know More
+                                <button class="flex font-extrabold text-blue-600 text-[16px] py-0 md:py-3 transition-all duration-500  hover:text-blue-500 group   w-[120px]">Know More
                                     <div class="h-[7px] w-[7px] border-r-[2px] border-b-[2px] -rotate-[45deg] border-blue-600  group-hover:border-blue-500 relative top-[10px] left-[5px] transition-all duration-500 "></div>
                                 </button>
     
@@ -884,14 +800,14 @@
 
                             <!-- box content -->
                             <div class="z-[100] absolute h-full w-full flex flex-col space-y-5 pl-5 py-6 pr-8 ">
-                                <h3 class="font-[900] text-2xl text-white font-mullish">Payouts</h3>
+                                <h3 class="font-[900] text-2xl text-white  ">Payouts</h3>
                                 <p class="text-[15px] text-gray-400 pr-5">
                                     Make simple, reliable & secure payouts to bank accounts, UPI IDs or wallets
                                 </p>
 
                                 <!-- button -->
                                 
-                                <button class="flex font-extrabold text-blue-600 text-[16px] py-3 transition-all duration-500  hover:text-blue-500 group font-mullish w-[120px] pt-3">Know More
+                                <button class="flex font-extrabold text-blue-600 text-[16px] py-3 transition-all duration-500  hover:text-blue-500 group   w-[120px] pt-3">Know More
                                     <div class="h-[7px] w-[7px] border-r-[2px] border-b-[2px] -rotate-[45deg] border-blue-600  group-hover:border-blue-500 relative top-[10px] left-[5px] transition-all duration-500 "></div>
                                 </button>
     
@@ -931,14 +847,14 @@
 
                             <!-- box content -->
                             <div class="z-[100] absolute h-full w-full flex flex-col space-y-5 pl-5 py-6 pr-8 ">
-                                <h3 class="font-[900] text-2xl text-white font-mullish">Payroll</h3>
+                                <h3 class="font-[900] text-2xl text-white  ">Payroll</h3>
                                 <p class="text-[15px] text-gray-400 pr-5 ">
                                     Set your payroll and compliances like TDS, ESIC, PT, & PF on autopilot. 
                                 </p>
 
                                 <!-- button -->
                                 
-                                <button class="flex font-extrabold text-blue-600 text-[16px] py-3 transition-all duration-500  hover:text-blue-500 group font-mullish w-[120px] pt-9">Know More
+                                <button class="flex font-extrabold text-blue-600 text-[16px] py-3 transition-all duration-500  hover:text-blue-500 group   w-[120px] pt-9">Know More
                                     <div class="h-[7px] w-[7px] border-r-[2px] border-b-[2px] -rotate-[45deg] border-blue-600  group-hover:border-blue-500 relative top-[10px] left-[5px] transition-all duration-500 "></div>
                                 </button>
     
@@ -956,7 +872,7 @@
                             <span class="font-bold text-white">No sign-up required!</span>
                         </p>
                         <!-- button -->
-                        <button class=" relative bg-lightBlue w-[260px] flex items-center justify-center md:justify-start text-white py-[14px] px-[10px] md:pr-[90px] rounded-md font-mullish font-bold hover:bg-lightBlue500 transition-all duration-200 mx-4 md:mx-0">
+                        <button class=" relative bg-lightBlue w-[260px] flex items-center justify-center md:justify-start text-white py-[14px] px-[10px] md:pr-[90px] rounded-md   font-bold hover:bg-lightBlue500 transition-all duration-200 mx-4 md:mx-0">
                             Check out the demo
                             <div class=" w-12 h-[60px] bg-greenLight skew-x-[20deg] absolute right-6 grid place-items-center">
                                 <svg viewBox="0 0 24 24" focusable="false" class="w-[20px] h-[20px] -skew-x-[20deg] ">
@@ -979,7 +895,7 @@
 
                 <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-10 gap-x-5 relative z-[10]">
                     <!-- first item -->
-                    <div class="text-[40px] font-[900] font-mullish text-[#02042A] leading-snug  ">
+                    <div class="text-[40px] font-[900]   text-[#02042A] leading-snug  ">
                         <h2 class="md:py-10 ">
                             New in the 
                             <span class="text-[#2B84EA]">
@@ -992,7 +908,7 @@
                     <!-- new cards section-->
 
                     <!-- card-1 -->
-                    <div class="bg-[url(/Images/instant-settlement-bg.svg)] bg-no-repeat w-full max-h-full md:max-h-[300px] bg-white cursor-pointer hover:bg-[url(/Images/instant-settlement-bghover.svg)] hover:scale-105 transition-all duration-200 p-10 shadow-lg shadow-[#eeeded] hover:bg-no-repeat font-mullish rounded-sm ">
+                    <div class="bg-[url(/Images/instant-settlement-bg.svg)] bg-no-repeat w-full max-h-full md:max-h-[300px] bg-white cursor-pointer hover:bg-[url(/Images/instant-settlement-bghover.svg)] hover:scale-105 transition-all duration-200 p-10 shadow-lg shadow-[#eeeded] hover:bg-no-repeat   rounded-sm ">
                         <img src="./Images/instant-settlement-icon.svg" alt="" class=" mb-4 h-10 w-10 rounded-[50%] bg-[#0884FF] " >
                         <h3 class="font-extrabold text-[18px]">
                             Instant Settlements
@@ -1001,14 +917,14 @@
                             Settle your customer payments within 10 seconds as soon your account is activated, even during holidays.
                         </p>
                         <!-- know more button -->
-                        <button class="flex font-extrabold text-blue-600 text-[16px] transition-all duration-500  hover:text-blue-500 group font-mullish w-[120px]">Know More
+                        <button class="flex font-extrabold text-blue-600 text-[16px] transition-all duration-500  hover:text-blue-500 group   w-[120px]">Know More
                             <div class="h-[7px] w-[7px] border-r-[2px] border-b-[2px] -rotate-[45deg] border-blue-600  group-hover:border-blue-500 relative top-[10px] left-[5px] transition-all duration-500 "></div>
                         </button>
                     </div>
 
                     <!-- card-2 -->
                     <!-- <img src="./Images/upi-autopay-hoverbg.svg" alt=""> -->
-                    <div style="background-position: -2px -2px" class="bg-[url(/Images/upi-autopay-bg.svg)] bg-no-repeat w-full max-h-full md:max-h-[300px] bg-white cursor-pointer hover:bg-[url(/Images/upi-autopay-hoverbg.svg)] hover:scale-105 transition-all duration-200 p-10 shadow-lg shadow-[#eeeded] hover:bg-no-repeat font-mullish rounded-sm ">
+                    <div style="background-position: -2px -2px" class="bg-[url(/Images/upi-autopay-bg.svg)] bg-no-repeat w-full max-h-full md:max-h-[300px] bg-white cursor-pointer hover:bg-[url(/Images/upi-autopay-hoverbg.svg)] hover:scale-105 transition-all duration-200 p-10 shadow-lg shadow-[#eeeded] hover:bg-no-repeat   rounded-sm ">
                         <img src="./Images/autopay-icon.svg" alt="" class=" mb-4 h-10 w-10 rounded-[50%] bg-[#0884FF]">
                         <h3 class="font-extrabold text-[18px]">
                             UPI AutoPay
@@ -1017,7 +933,7 @@
                             Allow customers to set up recurring payments using UPI Apps.
                         </p>
                         <!-- know more button -->
-                        <button class="flex font-extrabold text-blue-600 text-[16px] transition-all duration-500  hover:text-blue-500 group font-mullish w-[120px]">Know More
+                        <button class="flex font-extrabold text-blue-600 text-[16px] transition-all duration-500  hover:text-blue-500 group   w-[120px]">Know More
                             <div class="h-[7px] w-[7px] border-r-[2px] border-b-[2px] -rotate-[45deg] border-blue-600  group-hover:border-blue-500 relative top-[10px] left-[5px] transition-all duration-500 "></div>
                         </button>
                     </div>
@@ -1025,7 +941,7 @@
                     <!-- card-3 -->
                     <!-- <img src="./Images/magic-checkout-hoverbg.svg" alt=""> -->
 
-                    <div style="background-position: -2px -2px" class="bg-[url(./Images/magic-checkout-bg.svg)] bg-no-repeat w-full max-h-full md:max-h-[300px] bg-white cursor-pointer hover:bg-[url(/Images/magic-checkout-hoverbg.svg)] hover:scale-105 transition-all duration-200 p-10 shadow-lg shadow-[#eeeded] hover:bg-no-repeat font-mullish  rounded-sm ">
+                    <div style="background-position: -2px -2px" class="bg-[url(./Images/magic-checkout-bg.svg)] bg-no-repeat w-full max-h-full md:max-h-[300px] bg-white cursor-pointer hover:bg-[url(/Images/magic-checkout-hoverbg.svg)] hover:scale-105 transition-all duration-200 p-10 shadow-lg shadow-[#eeeded] hover:bg-no-repeat    rounded-sm ">
                         <img src="./Images/payment-button.svg" alt="" class=" mb-4 h-10 w-10 rounded-[50%] bg-[#0884FF]">
                         <h3 class="font-extrabold text-[18px]">
                             Payment Button
@@ -1034,7 +950,7 @@
                             Accept payments on your website, in less than 5 minutes. No developer needed.
                         </p>
                         <!-- know more button -->
-                        <button class="flex font-extrabold text-blue-600 text-[16px] transition-all duration-500  hover:text-blue-500 group font-mullish w-[120px]">Know More
+                        <button class="flex font-extrabold text-blue-600 text-[16px] transition-all duration-500  hover:text-blue-500 group   w-[120px]">Know More
                             <div class="h-[7px] w-[7px] border-r-[2px] border-b-[2px] -rotate-[45deg] border-blue-600  group-hover:border-blue-500 relative top-[10px] left-[5px] transition-all duration-500 "></div>
                         </button>
                     </div>
@@ -1042,7 +958,7 @@
                     <!-- card-4 -->
                     <!-- <img src="./Images/payment-button-hoverbg.svg" alt=""> -->
 
-                    <div style="background-position: -2px -2px" class="bg-[url(/Images/payment-button-bg.svg)] bg-no-repeat w-full max-h-full md:max-h-[300px] bg-white cursor-pointer hover:bg-[url(/Images/payment-button-hoverbg.svg)] hover:scale-105 transition-all duration-200 p-10 shadow-lg shadow-[#eeeded] hover:bg-no-repeat font-mullish rounded-sm">
+                    <div style="background-position: -2px -2px" class="bg-[url(/Images/payment-button-bg.svg)] bg-no-repeat w-full max-h-full md:max-h-[300px] bg-white cursor-pointer hover:bg-[url(/Images/payment-button-hoverbg.svg)] hover:scale-105 transition-all duration-200 p-10 shadow-lg shadow-[#eeeded] hover:bg-no-repeat   rounded-sm">
                         <img src="./Images/qr-icon.svg" alt="" class=" mb-4 h-10 w-10 ">
                         <h3 class="font-extrabold text-[18px]">
                             QR Codes
@@ -1051,7 +967,7 @@
                             Create unlimited QR codes with business branding and start accepting payments for free*.
                         </p>
                         <!-- know more button -->
-                        <button class="flex font-extrabold text-blue-600 text-[16px] transition-all duration-500  hover:text-blue-500 group font-mullish w-[120px]">Know More
+                        <button class="flex font-extrabold text-blue-600 text-[16px] transition-all duration-500  hover:text-blue-500 group   w-[120px]">Know More
                             <div class="h-[7px] w-[7px] border-r-[2px] border-b-[2px] -rotate-[45deg] border-blue-600  group-hover:border-blue-500 relative top-[10px] left-[5px] transition-all duration-500 "></div>
                         </button>
                     </div>
@@ -1059,7 +975,7 @@
                     <!-- card-5 -->
                     <!-- <img src="./Images/instantsettlement-hoverbg.svg" alt=""> -->
 
-                    <div style="background-position: -2px -2px" class="bg-[url(/Images/instantsettlement-bg.svg)] bg-no-repeat w-full max-h-full md:max-h-[300px] bg-white cursor-pointer hover:bg-[url(/Images/instantsettlement-hoverbg.svg)] hover:scale-105 transition-all duration-200 p-10 shadow-lg shadow-[#eeeded] hover:bg-no-repeat font-mullish rounded-sm">
+                    <div style="background-position: -2px -2px" class="bg-[url(/Images/instantsettlement-bg.svg)] bg-no-repeat w-full max-h-full md:max-h-[300px] bg-white cursor-pointer hover:bg-[url(/Images/instantsettlement-hoverbg.svg)] hover:scale-105 transition-all duration-200 p-10 shadow-lg shadow-[#eeeded] hover:bg-no-repeat   rounded-sm">
                         <img src="./Images/magic-checkout.svg" alt="" class=" mb-4 h-10 w-10 ">
                         <h3 class="font-extrabold text-[18px]">
                             Magic Checkout
@@ -1068,7 +984,7 @@
                             Improve your order conversion rates & reduce return-to-origins. Boost your business by 20%!
                         </p>
                         <!-- know more button -->
-                        <button class="flex font-extrabold text-blue-600 text-[16px] transition-all duration-500  hover:text-blue-500 group font-mullish w-[120px]">Know More
+                        <button class="flex font-extrabold text-blue-600 text-[16px] transition-all duration-500  hover:text-blue-500 group   w-[120px]">Know More
                             <div class="h-[7px] w-[7px] border-r-[2px] border-b-[2px] -rotate-[45deg] border-blue-600  group-hover:border-blue-500 relative top-[10px] left-[5px] transition-all duration-500 "></div>
                         </button>
                     </div>
@@ -1077,7 +993,7 @@
         </section>
 
         <!-- Core-Section -->
-        <section class="Core-Section w-full bg-[url(./Images/core-features-sectionBg.svg)] bg-no-repeat bg-cover mt-1 relative font-mullish Core-Section z-10 mx-auto">
+        <section class="Core-Section w-full bg-[url(./Images/core-features-sectionBg.svg)] bg-no-repeat bg-cover mt-1 relative   Core-Section z-10 mx-auto">
             <!-- head -->
             <div class="relative w-11/12 max-w-[1080px] pt-9 lg:pt-4 mx-auto">
                 <h2 class="text-white font-[1000] text-2xl text-left lg:text-center">
@@ -1160,7 +1076,7 @@
         </section>
 
         <!-- join-Business-Section -->
-        <section class="relative font-mullish pt-40 -mt-[200px] bg-[#F5F8FE] ">
+        <section class="relative   pt-40 -mt-[200px] bg-[#F5F8FE] ">
             <div class="relative w-11/12 max-w-[1080px]  mx-auto flex flex-col md:flex-row pt-5 justify-between">
                 <!-- left Part -->
                 <div class="relative pb-[5rem] md:h-[580px] w-full md:max-w-[calc(100%-500px)] flex flex-col tracking-tight pt-[7rem]">
@@ -1265,7 +1181,7 @@
                 <!-- left part -->
                     <div class="flex flex-col w-full ">
                         <!-- heading -->
-                        <h1 class="font-mullish  font-[900] text-[24px] leading-[29px] max-w-[600px] text-white">
+                        <h1 class="   font-[900] text-[24px] leading-[29px] max-w-[600px] text-white">
                             Supercharge your business with Razorpay
                         </h1>
                         <!-- hr tag -->
@@ -1277,7 +1193,7 @@
                         </p>
 
                         <!-- list items -->
-                        <ul class="font-mullish flex flex-wrap md:flex-row  text-white mt-8 max-w-[250px]">
+                        <ul class="  flex flex-wrap md:flex-row  text-white mt-8 max-w-[250px]">
                             <li class="flex items-center space-x-2 mt-1">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check text-greenLight "><polyline points="20 6 9 17 4 12"></polyline></svg>
                                 <span>Quick onboarding</span>
@@ -1402,7 +1318,7 @@
                     </ul>
                     <!-- block-4 -->
                     <h2 class="text-[16px] leading-[28px] text-[#525a76] font-[700] mt-6">MORE</h2>
-                    <ul class="text-[#0b72e7] text-[16px] font-[400] leading-[28px]">
+                    <ul class="text-[#0b72e7] text-[16px] font-[400] leading-[28px] mb-6">
                         <li class="hover:text-[#344a6c]">
                             <a href="#">Route</a>
                         </li>
@@ -1436,7 +1352,7 @@
                 <!-- Third div -->
                 <div>
                     <!-- block-1 -->
-                    <h2 class="text-[16px] leading-[28px] text-[#525a76] font-[700] ">ACCEPT PAYMENTS</h2>
+                    <h2 class="text-[16px] leading-[28px] text-[#525a76] font-[700]">ACCEPT PAYMENTS</h2>
                     <ul class="text-[#0b72e7] text-[16px] font-[400] leading-[28px]">
                         <li class="hover:text-[#344a6c]">
                             <a href="#">Payment Gateway</a>
@@ -1520,7 +1436,7 @@
 
                     <!-- block-5 -->
                     <h2 class="text-[16px] leading-[28px] text-[#525a76] font-[700] mt-6">FREE TOOLS</h2>
-                    <ul class="text-[#0b72e7] text-[16px] font-[400] leading-[28px]">
+                    <ul class="text-[#0b72e7] text-[16px] font-[400] leading-[28px] mb-6">
                         <li class="hover:text-[#344a6c]">
                             <a href="#">GST Calculator</a>
                         </li>
